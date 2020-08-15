@@ -1,16 +1,23 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, Button } from 'react-native';
 
-const CategoryMealsScree = props => {
+const CategoryMealsScreen = props => {
     return ( 
-        <View>
+        <View style = {styles.screen}>
             <Text> CategoriesMeal Screen </Text>
+            <Button title="Go To Meals Details Screen" onPress={() => {
+                props.navigation.navigate({routeName: 'MealDetail'})
+            }}/>
         </View>
      );
 }
  
 const styles = StyleSheet.create({
-
+    screen: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center'
+    }
 });
 
-export default CategoryMealsScree;
+export default CategoryMealsScreen;
