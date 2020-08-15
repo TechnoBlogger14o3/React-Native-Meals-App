@@ -4,8 +4,6 @@ import { CATEGORIES } from '../data/dummy-data';
 import Colors from '../constants/Colors';
 
 const CategoriesScreen = props => {
-    console.log(props);
-
     const renderGridItem = (itemData) => {
         return (
             <TouchableOpacity 
@@ -37,10 +35,6 @@ const CategoriesScreen = props => {
 
 CategoriesScreen.navigationOptions = {
     headerTitle: 'Meal Categories',
-    headerStyle: {
-        backgroundColor: Colors.primaryColor
-    },
-    headerTintColor: 'white'
 };
 
 const styles = StyleSheet.create({
