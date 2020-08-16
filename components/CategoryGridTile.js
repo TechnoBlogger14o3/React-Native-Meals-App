@@ -25,14 +25,14 @@ const styles = StyleSheet.create({
         margin: 15,
         height: 150,
         borderRadius: 10, 
-        overflow: 'hidden'
+        overflow: 'hidden',
+        elevation: 5,
     }, 
     container: {
         flex: 1, 
         borderRadius: 10,
         alignItems: 'center',
         justifyContent: 'center',
-        elevation: 3,
         shadowOpacity: 0.26,
         shadowOffset: { width: 0, height: 2},
         shadowRadius: 10
