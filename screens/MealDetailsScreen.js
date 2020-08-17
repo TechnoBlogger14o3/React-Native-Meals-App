@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback } from 'react';
-import { View, Text, Button, StyleSheet, ScrollView, Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
 import { useSelector, useDispatch } from "react-redux";
 import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import HeaderButton from '../components/HeaderButton';
@@ -27,16 +27,12 @@ const MealDetailScreen = props => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // props.navigation.setParams({ mealTitle: selectedMeal.title });
     props.navigation.setParams({ toggleFav: toggleFavoriteHandler});
   }, [toggleFavoriteHandler]);
 
   useEffect(() => {
     props.navigation.setParams({ isFav: currentMealIsFavorite});
   }, [currentMealIsFavorite]);
-
-  
- 
 
   return (
     <ScrollView>
@@ -54,7 +50,6 @@ const MealDetailScreen = props => {
       {selectedMeal.steps.map(step => (
         <ListItem key={step}>{step}</ListItem>
       ))}
-      
     </ScrollView>
   );
 };
