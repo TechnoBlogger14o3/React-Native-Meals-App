@@ -92,7 +92,7 @@ const MealsFavTabNavigator =
       });
 
 const MainNavigator = createDrawerNavigator({
-    MealsFav: MealsFavTabNavigator,
+    Home: MealsFavTabNavigator,
     Filters: FiltersNavigator
 });
 
