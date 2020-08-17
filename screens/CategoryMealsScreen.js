@@ -12,7 +12,7 @@ const CategoryMealsScreen = props => {
         meal => meal.categoryIds.indexOf(catId) >= 0
     );
 
-    if(displayedMeals.length === 0 || !favMeals) {
+    if(displayedMeals.length === 0) {
         return ( 
           <View style={styles.content}>
             <DefaultText>No meals found.</DefaultText>
