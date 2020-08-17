@@ -32,7 +32,6 @@ const MealsNavigator = createStackNavigator(
     MealDetail: MealDetailsScreen
   },
   {
-    // initialRouteName: 'Categories',
     defaultNavigationOptions: defaultStackNavOptions
   }
 );
